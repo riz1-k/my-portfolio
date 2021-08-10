@@ -1,13 +1,6 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
-import {
-  Nav,
-  NavLink,
-  MobileIcon,
-  NavMenu,
-  NavBtn,
-  NavBtnLink,
-} from './NavbarElements';
+import { Nav, NavLink, MobileIcon, NavMenu } from './NavbarElements';
 
 function Navbar({ toggle }) {
   return (
@@ -22,19 +15,10 @@ function Navbar({ toggle }) {
         </MobileIcon>
 
         <NavMenu>
-          <NavLink to='about' activeStyle>
-            About
-          </NavLink>
-          <NavLink to='services' activeStyle>
-            Services
-          </NavLink>
-          <NavLink to='contact-us' activeStyle>
-            Contact Us
-          </NavLink>
-          <NavLink to='sign-up' activeStyle>
-            Sign Up
-          </NavLink>
-          <NavBtnLink to='sign-in'>Sign In</NavBtnLink>
+          <NavLink to='about'>About</NavLink>
+          <NavLink to='services'>Services</NavLink>
+          <NavLink to='contact-us'>Contact Us</NavLink>
+          <NavLink to='sign-up'>Sign Up</NavLink>
         </NavMenu>
       </Nav>
     </>
