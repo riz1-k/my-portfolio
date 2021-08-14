@@ -16,11 +16,17 @@ export const Form = styled.form`
   align-items: center;
   max-width: 1600px;
   height: 940px;
+  @media screen and (max-width: 480px) {
+    max-width: 200px;
+  }
 `;
 
 export const Input = styled.input`
   height: 24px;
   width: 200px;
+  @media screen and (max-width: 480px) {
+    max-width: 200px;
+  }
 `;
 
 export const Label = styled.label`

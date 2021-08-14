@@ -8,6 +8,11 @@ export const HeroContainer = styled.div`
   height: 962px;
   position: relative;
   z-index: 1;
+  width: 100%;
+
+  @media screen and (max-width: 480px) {
+    height: 800px;
+  }
 `;
 
 export const HeroContent = styled.div`
@@ -32,7 +37,7 @@ export const HeroH1 = styled.h1`
     margin: auto;
   }
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 40px;
     margin: 0;
   }
 `;
@@ -73,6 +78,9 @@ export const HeroP = styled.p`
 export const HeroBtn = styled.div`
   display: flex;
   justify-content: flex-start;
+  @media screen and (max-width: 480px) {
+    margin-top: 10px;
+  }
 `;
 
 export const ArrowDown = styled.div`
@@ -88,7 +96,6 @@ export const Button = styled(LinkS)`
   border-radius: 10px;
   /* box-shadow: 2px 2px #fff; */
   background: #256ce1;
-  padding: 15px 30px;
   color: #fff;
   font-size: 1.3rem;
   outline: none;
@@ -98,6 +105,12 @@ export const Button = styled(LinkS)`
   text-decoration: none;
   font-family: 'Baloo Tamma 2', cursive;
   margin-top: 2rem;
+  padding: 15px 30px;
+  @media screen and (max-width: 480px) {
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 1rem;
+  }
   &:hover {
     transition: all 0.2s ease-in-out;
     background: rgb(37, 108, 225);

@@ -106,8 +106,13 @@ export const Button = styled(LinkR)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  margin-top: 2px;
   font-family: 'Baloo Tamma 2', cursive;
+  @media screen and (max-width: 480px) {
+    padding: 10px 20px;
 
+    font-size: 1rem;
+  }
   &:hover {
     transition: all 0.2s ease-in-out;
     background: rgb(37, 108, 225);

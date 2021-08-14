@@ -31,6 +31,10 @@ export const NavLink = styled(LinkS)`
   }
   &:hover {
   }
+  @media screen and (max-width: 480px) {
+    font-size: 0.5rem;
+    margin: 0;
+  }
 `;
 
 export const MobileIcon = styled.div`

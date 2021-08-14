@@ -104,7 +104,11 @@ export const Button = styled(LinkR)`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   font-family: 'Baloo Tamma 2', cursive;
-
+  @media screen and (max-width: 480px) {
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 1rem;
+  }
   &:hover {
     transition: all 0.3s ease-in-out;
     transform: scale(1.05);

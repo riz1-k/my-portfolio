@@ -16,7 +16,7 @@ export const ServicesContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    height: 2000px;
+    height: 700px;
   }
 `;
 
@@ -53,6 +53,7 @@ export const ServicesCard = styled.div`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
   text-decoration: none;
+  width: 100%;
 
   &:hover {
     transform: scale(1.03);
@@ -66,6 +67,9 @@ export const ServiceIcons = styled.img`
   width: 350px;
   margin-bottom: 10px;
   border-radius: 5px;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const ServicesH1 = styled.h1`
