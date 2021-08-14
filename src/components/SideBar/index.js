@@ -6,8 +6,6 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SignInBtnWrap,
-  SignInBtn,
 } from './SidebarElements';
 
 function Sidebar({ isOpen, toggle }) {
@@ -18,23 +16,18 @@ function Sidebar({ isOpen, toggle }) {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink onClick={toggle} to='about'>
+          <SidebarLink onClick={toggle} to='home'>
             Home
           </SidebarLink>
-          <SidebarLink onClick={toggle} to='services'>
-            Services
+          <SidebarLink onClick={toggle} to='about'>
+            About
           </SidebarLink>
-          <SidebarLink onClick={toggle} to='contact-us'>
-            Contact Us
+          <SidebarLink onClick={toggle} to='projects'>
+            Projects
           </SidebarLink>
-          <SidebarLink onClick={toggle} to='sign-up'>
-            Sign Up
+          <SidebarLink onClick={toggle} to='contact'>
+            Contact
           </SidebarLink>
-          <SignInBtnWrap>
-            <SignInBtn onClick={toggle} to='/sign-in'>
-              Sign In
-            </SignInBtn>
-          </SignInBtnWrap>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
